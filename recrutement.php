@@ -49,10 +49,10 @@ $message = "cv : ".$cv."\n"." lettreMotivation : ".$lettreMotivation;
 
     //Server settings
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->Host       = '';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'demarchescandidats@gmail.com';                     //SMTP username
-    $mail->Password   = 'djje peyp nvuu runk';                               //SMTP password
+    $mail->Username   = '';                     //SMTP username
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -65,7 +65,7 @@ $message = "cv : ".$cv."\n"." lettreMotivation : ".$lettreMotivation;
 
     //Recipients
     $mail->setFrom('from@example.com', 'easysuccess');
-    $mail->addAddress('recrutement@easysuccess-sp.com');     //Add a recipient
+    $mail->addAddress('');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
